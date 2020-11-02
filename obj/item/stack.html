@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;obj&#x2F;item&#x2F;stack - &#x2F;tg&#x2F; Station 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">&#x2F;tg&#x2F; Station 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="obj/item/stack.html#var">Var Details</a> - <a href="obj/item/stack.html#proc">Proc Details</a></header>
+<main>
+<h1>stack <aside>/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/stack.html">stack</a></aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/f1c0ef902a8fbbe0dbc48dc0616ab99fbd69caf0/code/game/objects/items/stacks/stack.dm#L12">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;stacks&#x2F;stack.dm 12"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="obj/item/stack.html#var/absorption_capacity">absorption_capacity</a></th><td>How much blood flow this stack can absorb if used as a bandage on a cut wound, note that absorption is how much we lower the flow rate, not the raw amount of blood we suck up</td></tr>
+            <tr><th><a href="obj/item/stack.html#var/absorption_rate">absorption_rate</a></th><td>How quickly we lower the blood flow on a cut wound we're bandaging. Expected lifetime of this bandage in ticks is thus absorption_capacity/absorption_rate, or until the cut heals, whichever comes first</td></tr>
+            <tr><th><a href="obj/item/stack.html#var/material_type">material_type</a></th><td>Datum material type that this stack is made of</td></tr>
+            <tr><th><a href="obj/item/stack.html#var/matter_amount">matter_amount</a></th><td>Amount of matter for RCD</td></tr>
+            <tr><th><a href="obj/item/stack.html#var/splint_factor">splint_factor</a></th><td>If set and this used as a splint for a broken bone wound, this is used as a multiplier for applicable slowdowns (lower = better) (also for speeding up burn recoveries)</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="obj/item/stack.html#proc/build_recipe">build_recipe</a></th><td>Returns a list of properties of a given recipe</td></tr>
+            <tr><th><a href="obj/item/stack.html#proc/is_valid_recipe">is_valid_recipe</a></th><td>Checks if the recipe is valid to be used</td></tr>
+            <tr><th><a href="obj/item/stack.html#proc/recursively_build_recipes">recursively_build_recipes</a></th><td>Builds all recipes in a given recipe list and returns an association list containing them</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/absorption_capacity"><aside class="declaration">var </aside>absorption_capacity
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/f1c0ef902a8fbbe0dbc48dc0616ab99fbd69caf0/code/game/objects/items/stacks/stack.dm#L37">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;stacks&#x2F;stack.dm 37"/></a></h3>
+        <p>How much blood flow this stack can absorb if used as a bandage on a cut wound, note that absorption is how much we lower the flow rate, not the raw amount of blood we suck up</p><h3 id="var/absorption_rate"><aside class="declaration">var </aside>absorption_rate
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/f1c0ef902a8fbbe0dbc48dc0616ab99fbd69caf0/code/game/objects/items/stacks/stack.dm#L39">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;stacks&#x2F;stack.dm 39"/></a></h3>
+        <p>How quickly we lower the blood flow on a cut wound we're bandaging. Expected lifetime of this bandage in ticks is thus absorption_capacity/absorption_rate, or until the cut heals, whichever comes first</p><h3 id="var/material_type"><aside class="declaration">var </aside>material_type
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/f1c0ef902a8fbbe0dbc48dc0616ab99fbd69caf0/code/game/objects/items/stacks/stack.dm#L29">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;stacks&#x2F;stack.dm 29"/></a></h3>
+        <p>Datum material type that this stack is made of</p><h3 id="var/matter_amount"><aside class="declaration">var </aside>matter_amount
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/f1c0ef902a8fbbe0dbc48dc0616ab99fbd69caf0/code/game/objects/items/stacks/stack.dm#L41">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;stacks&#x2F;stack.dm 41"/></a></h3>
+        <p>Amount of matter for RCD</p><h3 id="var/splint_factor"><aside class="declaration">var </aside>splint_factor
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/f1c0ef902a8fbbe0dbc48dc0616ab99fbd69caf0/code/game/objects/items/stacks/stack.dm#L35">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;stacks&#x2F;stack.dm 35"/></a></h3>
+        <p>If set and this used as a splint for a broken bone wound, this is used as a multiplier for applicable slowdowns (lower = better) (also for speeding up burn recoveries)</p><h2 id="proc">Proc Details</h2><h3 id="proc/build_recipe"><aside class="declaration">proc </aside>build_recipe<aside>(/<a href="datum.html">datum</a>/stack_recipe/R) 
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/f1c0ef902a8fbbe0dbc48dc0616ab99fbd69caf0/code/game/objects/items/stacks/stack.dm#L157">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;stacks&#x2F;stack.dm 157"/></a></aside>
+        </h3>
+        <p>Returns a list of properties of a given recipe</p>
+<p>Arguments:</p>
+<ul>
+<li>R - The stack recipe we are using to get a list of properties</li>
+</ul><h3 id="proc/is_valid_recipe"><aside class="declaration">proc </aside>is_valid_recipe<aside>(/<a href="datum.html">datum</a>/stack_recipe/R, /list/recipe_list) 
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/f1c0ef902a8fbbe0dbc48dc0616ab99fbd69caf0/code/game/objects/items/stacks/stack.dm#L172">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;stacks&#x2F;stack.dm 172"/></a></aside>
+        </h3>
+        <p>Checks if the recipe is valid to be used</p>
+<p>Arguments:</p>
+<ul>
+<li>R - The stack recipe we are checking if it is valid</li>
+<li>recipe_list - The list of recipes we are using to check the given recipe</li>
+</ul><h3 id="proc/recursively_build_recipes"><aside class="declaration">proc </aside>recursively_build_recipes<aside>(/list/recipe_to_iterate) 
+        
+    
+            <a href="https://github.com/tgstation/tgstation/blob/f1c0ef902a8fbbe0dbc48dc0616ab99fbd69caf0/code/game/objects/items/stacks/stack.dm#L140">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;stacks&#x2F;stack.dm 140"/></a></aside>
+        </h3>
+        <p>Builds all recipes in a given recipe list and returns an association list containing them</p>
+<p>Arguments:</p>
+<ul>
+<li>recipe_to_iterate - The list of recipes we are using to build recipes</li>
+</ul></main>
+<footer>
+    tgstation.dme
+    <a href="https://github.com/tgstation/tgstation/tree/f1c0ef902a8fbbe0dbc48dc0616ab99fbd69caf0">f1c0ef9</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.3.0</a></footer>
+</body>
+</html>
